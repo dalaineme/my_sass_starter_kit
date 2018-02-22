@@ -2,6 +2,7 @@ const gulp = require('gulp');
 // Requires the gulp-sass plugin
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
+const useref = require('gulp-useref');
 
 gulp.task('sass', function() {
     return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
@@ -27,3 +28,9 @@ gulp.task('browserSync', function(){
        },
    }) 
 });
+
+gulp.task('useref', function(){
+    return gulp.src('app/*.html')
+      .pipe(useref())
+      .pipe(gulp.dest('dist'))
+  });
