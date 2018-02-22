@@ -5,6 +5,7 @@ const browserSync = require('browser-sync').create();
 const useref = require('gulp-useref');
 const uglify = require('gulp-uglify');
 const gulpIf = require('gulp-if');
+const cssnano = require('gulp-cssnano');
 
 gulp.task('sass', function() {
     return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
@@ -36,6 +37,15 @@ gulp.task('useref', function(){
       .pipe(useref())
       // Minifies only if it's a JavaScript file
       .pipe(gulpIf('*.js', uglify()))
+      .pipe(gulp.dest('dist'))
+});
+
+gulp.task('useref', function(){
+    return gulp.src('app/*.html')
+      .pipe(useref())
+      .pipe(gulpIf('*.js', uglify()))
+      // Minifies only if it's a CSS file
+      .pipe(gulpIf('*.css', cssnano()))
       .pipe(gulp.dest('dist'))
 });
 
