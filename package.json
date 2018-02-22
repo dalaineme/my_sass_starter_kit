@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dcDalin/my_sass_starter_kit#readme",
   "dependencies": {
+    "bootstrap-sass": "^3.3.7",
     "gulp-cssnano": "^2.1.2"
   },
   "devDependencies": {
