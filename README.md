@@ -1,6 +1,7 @@
 # Project Title
+[![built with gulp](https://img.shields.io/badge/gulp-all_the_builds!-eb4a4b.svg?logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAOCAMAAAA7QZ0XAAAABlBMVEUAAAD%2F%2F%2F%2Bl2Z%2FdAAAAAXRSTlMAQObYZgAAABdJREFUeAFjAAFGRjSSEQzwUgwQkjAFAAtaAD0Ls2nMAAAAAElFTkSuQmCC)](http://gulpjs.com/)
 
-One Paragraph of project description goes here
+My Sass Starter Kit, Compile Sall to CSS in Gulp
 
 ## Getting Started
 
@@ -8,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Packages needed
 
 ```
 Give examples
