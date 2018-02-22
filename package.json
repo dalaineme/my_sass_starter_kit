@@ -18,6 +18,7 @@
   "homepage": "https://github.com/dcDalin/my_sass_starter_kit#readme",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
   }
